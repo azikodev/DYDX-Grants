@@ -87,4 +87,27 @@
     letter-spacing: -0.252px;
     margin-bottom: 24px;
   }
+  &__link {
+    margin-bottom: 80px;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+  &__item {
+    padding: 24px;
+  }
+
+}
+.top {
+    height: 222px;
+    position: relative;
+    img {
+        position: absolute;
+        width: 392px;
+        height: 222px;
+    }
+
 }

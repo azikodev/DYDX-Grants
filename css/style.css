@@ -421,4 +421,26 @@ table {
   line-height: 24px; /* 133.333% */
   letter-spacing: -0.252px;
   margin-bottom: 24px;
+}
+.main-bottom__link {
+  margin-bottom: 80px;
+}
+.main-bottom__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.main-bottom__item {
+  padding: 24px;
+}
+
+.top {
+  height: 222px;
+  position: relative;
+}
+.top img {
+  position: absolute;
+  width: 392px;
+  height: 222px;
 }/*# sourceMappingURL=style.css.map */
