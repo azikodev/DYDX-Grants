@@ -15,7 +15,7 @@
     padding: 24px;
     border-radius: 16px;
     border: 1px solid #fff;
-    width: 392px;
+    // width: 392px;
     height: 560px;
     &--name {
       color: #a59eba;
@@ -76,7 +76,7 @@
     margin-bottom: 16px;
   }
   &__text {
-    color:  #c8c7d8;
+    color: #c8c7d8;
     text-align: center;
     font-feature-settings: "clig" off, "liga" off;
     font-family: $main-font;
@@ -96,18 +96,190 @@
     justify-content: center;
     gap: 24px;
   }
-  &__item {
+  &--info {
+    background-color: #393953;
     padding: 24px;
+    border-radius: 12px;
+    .item__name {
+      color: #c8c7d8;
+      font-family: $font-2;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      margin-bottom: 8px;
+    }
+    .item__title {
+      color: #fff;
+      font-family: $main-font;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 32px; /* 133.333% */
+      letter-spacing: -0.456px;
+      margin-bottom: 80px;
+    }
+    .item__date {
+      color: #c8c7d8;
+      font-family: Space Mono;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 150% */
+    }
   }
-
 }
 .top {
+  height: 222px;
+  // position: relative;
+  img {
+    // position: absolute;
+    width: 392px;
     height: 222px;
-    position: relative;
-    img {
-        position: absolute;
-        width: 392px;
-        height: 222px;
+  }
+}
+.discover-main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  // align-items: center;
+
+  &__card {
+    background-color: #393953;
+    padding: 24px;
+    border-radius: 16px;
+    border: 1px solid #fff;
+    background: #393953;
+  }
+  &__card--top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__card--funded {
+    border-radius: 100px;
+    border: 1px solid #393953;
+    background: #1c1c28;
+    padding: 4px 16px;
+    color: #fff;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: $main-font;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.176px;
+  }
+  &__card--open {
+    border-radius: 100px;
+    background: $primary-color;
+    padding: 4px 16px;
+    color: #fff;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: $main-font;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.176px;
+  }
+  &__card--completed {
+    border-radius: 100px;
+    background: #16b57f;
+    padding: 4px 16px;
+    color: #fff;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: $main-font;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.176px;
+  }
+  &__card--title {
+    color: #fff;
+    font-family: $main-font;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.456px;
+  }
+  &__card--text {
+    color: #fff;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: $main-font;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.176px;
+  }
+  &__card--amount {
+    color: #c8c7d8;
+    font-family: $font-2;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+  }
+}
+.funded-main {
+  &__cards-top {
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+  &__card-top {
+    padding: 24px;
+    background-color: #393953;
+    border-radius: 16px;
+    border: 1px solid #fff;
+    height: 560px;
+    // position: relative;
+    // img {
+    //   position: relative;
+    //   right: 100%;
+    //   bottom: 100%;
     }
+  }
+  &__cards--name {
+    color: #a59eba;
+    font-family: $font-2;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+  }
+  &__cards--title {
+    color: #fff;
+    font-family: $main-font;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */
+    letter-spacing: -0.456px;
+  }
+  &__cards--amount {
+    color: #a59eba;
+    font-family: $font-2;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+  }
+  &__cards--text {
+    color:  #fff;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: $font-2;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.176px;
+    max-width: 344px;
+    // margin-bottom: 200px;
+  }
 
 }
