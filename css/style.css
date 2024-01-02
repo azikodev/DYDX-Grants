@@ -973,6 +973,8 @@ table {
     align-items: center;
     gap: 8px;
     flex-direction: column;
+    /* margin-bottom: 0; */
+    /* padding-bottom: 0; */
     /* display: block; */
   }
 
@@ -1037,6 +1039,7 @@ table {
     font-weight: 700;
     line-height: 48px;
     margin: 0 auto;
+    margin-top: -100px;
     margin-bottom: 24px;
     /* 120% */
     letter-spacing: -0.84px;
@@ -1108,4 +1111,7 @@ table {
   .footer {
     padding: 0 50px 50px;
   }
+}
+.company-project__link {
+  width: 85%;
 }
